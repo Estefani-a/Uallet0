@@ -15,7 +15,6 @@
 		5BEE15AB287479F000E1A6B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15AA287479F000E1A6B0 /* Assets.xcassets */; };
 		5BEE15AE287479F000E1A6B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15AC287479F000E1A6B0 /* LaunchScreen.storyboard */; };
 		5BEE15BF2874998100E1A6B0 /* UalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15BE2874998100E1A6B0 /* UalletTests.swift */; };
-		5BEE15C628749A6500E1A6B0 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */; };
 		5BEE15CD2874AD8600E1A6B0 /* APIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15CC2874AD8600E1A6B0 /* APIStructs.swift */; };
 		5BEE15CF2874ADEE00E1A6B0 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15CE2874ADEE00E1A6B0 /* APIError.swift */; };
 		5BEE15D12874AE3600E1A6B0 /* APIRatePromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D02874AE3500E1A6B0 /* APIRatePromises.swift */; };
@@ -64,7 +63,6 @@
 		5BEE15AF287479F000E1A6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BEE15BC2874998100E1A6B0 /* UalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE15BE2874998100E1A6B0 /* UalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalletTests.swift; sourceTree = "<group>"; };
-		5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
 		5BEE15CC2874AD8600E1A6B0 /* APIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStructs.swift; sourceTree = "<group>"; };
 		5BEE15CE2874ADEE00E1A6B0 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		5BEE15D02874AE3500E1A6B0 /* APIRatePromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRatePromises.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				5BEE15BE2874998100E1A6B0 /* UalletTests.swift */,
-				5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */,
 			);
 			path = UalletTests;
 			sourceTree = "<group>";
@@ -171,9 +168,9 @@
 		5BEE15C72874A1D900E1A6B0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BEE15C92874A20500E1A6B0 /* ViewCell */,
 				5BEE15A5287479EF00E1A6B0 /* LoginViewController.swift */,
 				5BEE15A7287479EF00E1A6B0 /* LoginViewController.storyboard */,
-				5BEE15C92874A20500E1A6B0 /* ViewCell */,
 				5BEE15E32874B55D00E1A6B0 /* MainTabViewController.swift */,
 				5BEE15E42874B55D00E1A6B0 /* MainTabViewController.xib */,
 				5BEE15E72874B78900E1A6B0 /* HomeViewController.swift */,
@@ -419,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BEE15C628749A6500E1A6B0 /* LoginViewControllerTest.swift in Sources */,
 				5BEE15BF2874998100E1A6B0 /* UalletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
