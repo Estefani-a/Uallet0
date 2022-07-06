@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		109E6A7A215E950905E4BE7F /* Pods_Uallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6449E31030159E46DB627139 /* Pods_Uallet.framework */; };
+		5BEE15A2287479EF00E1A6B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15A1287479EF00E1A6B0 /* AppDelegate.swift */; };
+		5BEE15A4287479EF00E1A6B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15A3287479EF00E1A6B0 /* SceneDelegate.swift */; };
+		5BEE15A6287479EF00E1A6B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15A5287479EF00E1A6B0 /* LoginViewController.swift */; };
+		5BEE15A9287479EF00E1A6B0 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15A7287479EF00E1A6B0 /* LoginViewController.storyboard */; };
+		5BEE15AB287479F000E1A6B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15AA287479F000E1A6B0 /* Assets.xcassets */; };
+		5BEE15AE287479F000E1A6B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15AC287479F000E1A6B0 /* LaunchScreen.storyboard */; };
+		5BEE15BF2874998100E1A6B0 /* UalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15BE2874998100E1A6B0 /* UalletTests.swift */; };
+		5BEE15C628749A6500E1A6B0 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */; };
+		5BEE15CD2874AD8600E1A6B0 /* APIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15CC2874AD8600E1A6B0 /* APIStructs.swift */; };
+		5BEE15CF2874ADEE00E1A6B0 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15CE2874ADEE00E1A6B0 /* APIError.swift */; };
+		5BEE15D12874AE3600E1A6B0 /* APIRatePromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D02874AE3500E1A6B0 /* APIRatePromises.swift */; };
+		5BEE15D32874AE7800E1A6B0 /* DolarRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D22874AE7800E1A6B0 /* DolarRate.swift */; };
+		5BEE15D52874AEBE00E1A6B0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D42874AEBE00E1A6B0 /* Currency.swift */; };
+		5BEE15D72874AF0E00E1A6B0 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D62874AF0E00E1A6B0 /* Wallet.swift */; };
+		5BEE15D92874AF4A00E1A6B0 /* WalletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15D82874AF4A00E1A6B0 /* WalletStorage.swift */; };
+		5BEE15DC2874AFA600E1A6B0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15DB2874AFA600E1A6B0 /* Storage.swift */; };
+		5BEE15DE2874AFD300E1A6B0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15DD2874AFD300E1A6B0 /* Utils.swift */; };
+		5BEE15E52874B55D00E1A6B0 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15E32874B55D00E1A6B0 /* MainTabViewController.swift */; };
+		5BEE15E62874B55D00E1A6B0 /* MainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15E42874B55D00E1A6B0 /* MainTabViewController.xib */; };
+		5BEE15E92874B78900E1A6B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15E72874B78900E1A6B0 /* HomeViewController.swift */; };
+		5BEE15EA2874B78900E1A6B0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15E82874B78900E1A6B0 /* HomeViewController.xib */; };
+		5BEE15ED2874B85700E1A6B0 /* WalletsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15EB2874B85700E1A6B0 /* WalletsTableViewController.swift */; };
+		5BEE15EE2874B85700E1A6B0 /* WalletsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15EC2874B85700E1A6B0 /* WalletsTableViewController.xib */; };
+		5BEE15F12874B90E00E1A6B0 /* WalletAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15EF2874B90E00E1A6B0 /* WalletAddViewController.swift */; };
+		5BEE15F22874B90E00E1A6B0 /* WalletAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15F02874B90E00E1A6B0 /* WalletAddViewController.xib */; };
+		5BEE15F52874CD7D00E1A6B0 /* WalletDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15F32874CD7D00E1A6B0 /* WalletDetailsViewController.swift */; };
+		5BEE15F62874CD7D00E1A6B0 /* WalletDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15F42874CD7D00E1A6B0 /* WalletDetailsViewController.xib */; };
+		5BEE15F92874CFD900E1A6B0 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15F72874CFD900E1A6B0 /* DashboardViewController.swift */; };
+		5BEE15FA2874CFD900E1A6B0 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15F82874CFD900E1A6B0 /* DashboardViewController.xib */; };
+		5BEE15FD2874D23B00E1A6B0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15FB2874D23B00E1A6B0 /* InfoViewController.swift */; };
+		5BEE15FE2874D23B00E1A6B0 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE15FC2874D23B00E1A6B0 /* InfoViewController.xib */; };
+		5BEE16012874DEE000E1A6B0 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE15FF2874DEE000E1A6B0 /* WalletTableViewCell.swift */; };
+		5BEE16022874DEE000E1A6B0 /* WalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE16002874DEE000E1A6B0 /* WalletTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BEE15C02874998100E1A6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BEE1596287479EF00E1A6B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BEE159D287479EF00E1A6B0;
+			remoteInfo = Uallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BEE159E287479EF00E1A6B0 /* Uallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEE15A1287479EF00E1A6B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BEE15A3287479EF00E1A6B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BEE15A5287479EF00E1A6B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5BEE15A8287479EF00E1A6B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		5BEE15AA287479F000E1A6B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BEE15AD287479F000E1A6B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BEE15AF287479F000E1A6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BEE15BC2874998100E1A6B0 /* UalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEE15BE2874998100E1A6B0 /* UalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalletTests.swift; sourceTree = "<group>"; };
+		5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
+		5BEE15CC2874AD8600E1A6B0 /* APIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStructs.swift; sourceTree = "<group>"; };
+		5BEE15CE2874ADEE00E1A6B0 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5BEE15D02874AE3500E1A6B0 /* APIRatePromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRatePromises.swift; sourceTree = "<group>"; };
+		5BEE15D22874AE7800E1A6B0 /* DolarRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarRate.swift; sourceTree = "<group>"; };
+		5BEE15D42874AEBE00E1A6B0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5BEE15D62874AF0E00E1A6B0 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		5BEE15D82874AF4A00E1A6B0 /* WalletStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletStorage.swift; sourceTree = "<group>"; };
+		5BEE15DB2874AFA600E1A6B0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		5BEE15DD2874AFD300E1A6B0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5BEE15E32874B55D00E1A6B0 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		5BEE15E42874B55D00E1A6B0 /* MainTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
+		5BEE15E72874B78900E1A6B0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BEE15E82874B78900E1A6B0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5BEE15EB2874B85700E1A6B0 /* WalletsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTableViewController.swift; sourceTree = "<group>"; };
+		5BEE15EC2874B85700E1A6B0 /* WalletsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsTableViewController.xib; sourceTree = "<group>"; };
+		5BEE15EF2874B90E00E1A6B0 /* WalletAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAddViewController.swift; sourceTree = "<group>"; };
+		5BEE15F02874B90E00E1A6B0 /* WalletAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAddViewController.xib; sourceTree = "<group>"; };
+		5BEE15F32874CD7D00E1A6B0 /* WalletDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailsViewController.swift; sourceTree = "<group>"; };
+		5BEE15F42874CD7D00E1A6B0 /* WalletDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletDetailsViewController.xib; sourceTree = "<group>"; };
+		5BEE15F72874CFD900E1A6B0 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5BEE15F82874CFD900E1A6B0 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		5BEE15FB2874D23B00E1A6B0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5BEE15FC2874D23B00E1A6B0 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		5BEE15FF2874DEE000E1A6B0 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
+		5BEE16002874DEE000E1A6B0 /* WalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTableViewCell.xib; sourceTree = "<group>"; };
+		6449E31030159E46DB627139 /* Pods_Uallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74113753A90EE9DD8317E59A /* Pods-Uallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.debug.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.debug.xcconfig"; sourceTree = "<group>"; };
+		B90FFB6E1D267AF169F9BFD9 /* Pods-Uallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.release.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BEE159B287479EF00E1A6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109E6A7A215E950905E4BE7F /* Pods_Uallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BEE15B92874998100E1A6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		586ED9739FFFAC5F87627670 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74113753A90EE9DD8317E59A /* Pods-Uallet.debug.xcconfig */,
+				B90FFB6E1D267AF169F9BFD9 /* Pods-Uallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BEE1595287479EF00E1A6B0 = {
+			isa = PBXGroup;
+			children = (
+				5BEE15A0287479EF00E1A6B0 /* Uallet */,
+				5BEE15BD2874998100E1A6B0 /* UalletTests */,
+				5BEE159F287479EF00E1A6B0 /* Products */,
+				586ED9739FFFAC5F87627670 /* Pods */,
+				DD1BB3F114C8C3B0AED6AF73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BEE159F287479EF00E1A6B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE159E287479EF00E1A6B0 /* Uallet.app */,
+				5BEE15BC2874998100E1A6B0 /* UalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BEE15A0287479EF00E1A6B0 /* Uallet */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15CB2874A23700E1A6B0 /* Utils */,
+				5BEE15CA2874A21500E1A6B0 /* APIs */,
+				5BEE15C82874A1F100E1A6B0 /* Model */,
+				5BEE15C72874A1D900E1A6B0 /* ViewControllers */,
+				5BEE15A1287479EF00E1A6B0 /* AppDelegate.swift */,
+				5BEE15A3287479EF00E1A6B0 /* SceneDelegate.swift */,
+				5BEE15AA287479F000E1A6B0 /* Assets.xcassets */,
+				5BEE15AC287479F000E1A6B0 /* LaunchScreen.storyboard */,
+				5BEE15AF287479F000E1A6B0 /* Info.plist */,
+			);
+			path = Uallet;
+			sourceTree = "<group>";
+		};
+		5BEE15BD2874998100E1A6B0 /* UalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15BE2874998100E1A6B0 /* UalletTests.swift */,
+				5BEE15C528749A6500E1A6B0 /* LoginViewControllerTest.swift */,
+			);
+			path = UalletTests;
+			sourceTree = "<group>";
+		};
+		5BEE15C72874A1D900E1A6B0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15A5287479EF00E1A6B0 /* LoginViewController.swift */,
+				5BEE15A7287479EF00E1A6B0 /* LoginViewController.storyboard */,
+				5BEE15C92874A20500E1A6B0 /* ViewCell */,
+				5BEE15E32874B55D00E1A6B0 /* MainTabViewController.swift */,
+				5BEE15E42874B55D00E1A6B0 /* MainTabViewController.xib */,
+				5BEE15E72874B78900E1A6B0 /* HomeViewController.swift */,
+				5BEE15E82874B78900E1A6B0 /* HomeViewController.xib */,
+				5BEE15EB2874B85700E1A6B0 /* WalletsTableViewController.swift */,
+				5BEE15EC2874B85700E1A6B0 /* WalletsTableViewController.xib */,
+				5BEE15EF2874B90E00E1A6B0 /* WalletAddViewController.swift */,
+				5BEE15F02874B90E00E1A6B0 /* WalletAddViewController.xib */,
+				5BEE15F32874CD7D00E1A6B0 /* WalletDetailsViewController.swift */,
+				5BEE15F42874CD7D00E1A6B0 /* WalletDetailsViewController.xib */,
+				5BEE15F72874CFD900E1A6B0 /* DashboardViewController.swift */,
+				5BEE15F82874CFD900E1A6B0 /* DashboardViewController.xib */,
+				5BEE15FB2874D23B00E1A6B0 /* InfoViewController.swift */,
+				5BEE15FC2874D23B00E1A6B0 /* InfoViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BEE15C82874A1F100E1A6B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15D22874AE7800E1A6B0 /* DolarRate.swift */,
+				5BEE15D42874AEBE00E1A6B0 /* Currency.swift */,
+				5BEE15D62874AF0E00E1A6B0 /* Wallet.swift */,
+				5BEE15D82874AF4A00E1A6B0 /* WalletStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BEE15C92874A20500E1A6B0 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15FF2874DEE000E1A6B0 /* WalletTableViewCell.swift */,
+				5BEE16002874DEE000E1A6B0 /* WalletTableViewCell.xib */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		5BEE15CA2874A21500E1A6B0 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15CC2874AD8600E1A6B0 /* APIStructs.swift */,
+				5BEE15CE2874ADEE00E1A6B0 /* APIError.swift */,
+				5BEE15D02874AE3500E1A6B0 /* APIRatePromises.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5BEE15CB2874A23700E1A6B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE15DB2874AFA600E1A6B0 /* Storage.swift */,
+				5BEE15DD2874AFD300E1A6B0 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD1BB3F114C8C3B0AED6AF73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6449E31030159E46DB627139 /* Pods_Uallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BEE159D287479EF00E1A6B0 /* Uallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BEE15B2287479F000E1A6B0 /* Build configuration list for PBXNativeTarget "Uallet" */;
+			buildPhases = (
+				13407269AD38FF252E101BAD /* [CP] Check Pods Manifest.lock */,
+				5BEE159A287479EF00E1A6B0 /* Sources */,
+				5BEE159B287479EF00E1A6B0 /* Frameworks */,
+				5BEE159C287479EF00E1A6B0 /* Resources */,
+				8CB4C41E12FFB01BBAC27CF2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uallet;
+			productName = Uallet;
+			productReference = 5BEE159E287479EF00E1A6B0 /* Uallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BEE15BB2874998100E1A6B0 /* UalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BEE15C42874998100E1A6B0 /* Build configuration list for PBXNativeTarget "UalletTests" */;
+			buildPhases = (
+				5BEE15B82874998100E1A6B0 /* Sources */,
+				5BEE15B92874998100E1A6B0 /* Frameworks */,
+				5BEE15BA2874998100E1A6B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BEE15C12874998100E1A6B0 /* PBXTargetDependency */,
+			);
+			name = UalletTests;
+			productName = UalletTests;
+			productReference = 5BEE15BC2874998100E1A6B0 /* UalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BEE1596287479EF00E1A6B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5BEE159D287479EF00E1A6B0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5BEE15BB2874998100E1A6B0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5BEE159D287479EF00E1A6B0;
+					};
+				};
+			};
+			buildConfigurationList = 5BEE1599287479EF00E1A6B0 /* Build configuration list for PBXProject "Uallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BEE1595287479EF00E1A6B0;
+			productRefGroup = 5BEE159F287479EF00E1A6B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BEE159D287479EF00E1A6B0 /* Uallet */,
+				5BEE15BB2874998100E1A6B0 /* UalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BEE159C287479EF00E1A6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEE15AE287479F000E1A6B0 /* LaunchScreen.storyboard in Resources */,
+				5BEE15F22874B90E00E1A6B0 /* WalletAddViewController.xib in Resources */,
+				5BEE16022874DEE000E1A6B0 /* WalletTableViewCell.xib in Resources */,
+				5BEE15FA2874CFD900E1A6B0 /* DashboardViewController.xib in Resources */,
+				5BEE15E62874B55D00E1A6B0 /* MainTabViewController.xib in Resources */,
+				5BEE15EE2874B85700E1A6B0 /* WalletsTableViewController.xib in Resources */,
+				5BEE15EA2874B78900E1A6B0 /* HomeViewController.xib in Resources */,
+				5BEE15AB287479F000E1A6B0 /* Assets.xcassets in Resources */,
+				5BEE15F62874CD7D00E1A6B0 /* WalletDetailsViewController.xib in Resources */,
+				5BEE15FE2874D23B00E1A6B0 /* InfoViewController.xib in Resources */,
+				5BEE15A9287479EF00E1A6B0 /* LoginViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BEE15BA2874998100E1A6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13407269AD38FF252E101BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB4C41E12FFB01BBAC27CF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BEE159A287479EF00E1A6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEE15A6287479EF00E1A6B0 /* LoginViewController.swift in Sources */,
+				5BEE15F92874CFD900E1A6B0 /* DashboardViewController.swift in Sources */,
+				5BEE15DC2874AFA600E1A6B0 /* Storage.swift in Sources */,
+				5BEE15CD2874AD8600E1A6B0 /* APIStructs.swift in Sources */,
+				5BEE16012874DEE000E1A6B0 /* WalletTableViewCell.swift in Sources */,
+				5BEE15D32874AE7800E1A6B0 /* DolarRate.swift in Sources */,
+				5BEE15D12874AE3600E1A6B0 /* APIRatePromises.swift in Sources */,
+				5BEE15E92874B78900E1A6B0 /* HomeViewController.swift in Sources */,
+				5BEE15D92874AF4A00E1A6B0 /* WalletStorage.swift in Sources */,
+				5BEE15E52874B55D00E1A6B0 /* MainTabViewController.swift in Sources */,
+				5BEE15D52874AEBE00E1A6B0 /* Currency.swift in Sources */,
+				5BEE15F12874B90E00E1A6B0 /* WalletAddViewController.swift in Sources */,
+				5BEE15A2287479EF00E1A6B0 /* AppDelegate.swift in Sources */,
+				5BEE15F52874CD7D00E1A6B0 /* WalletDetailsViewController.swift in Sources */,
+				5BEE15ED2874B85700E1A6B0 /* WalletsTableViewController.swift in Sources */,
+				5BEE15D72874AF0E00E1A6B0 /* Wallet.swift in Sources */,
+				5BEE15A4287479EF00E1A6B0 /* SceneDelegate.swift in Sources */,
+				5BEE15CF2874ADEE00E1A6B0 /* APIError.swift in Sources */,
+				5BEE15DE2874AFD300E1A6B0 /* Utils.swift in Sources */,
+				5BEE15FD2874D23B00E1A6B0 /* InfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BEE15B82874998100E1A6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEE15C628749A6500E1A6B0 /* LoginViewControllerTest.swift in Sources */,
+				5BEE15BF2874998100E1A6B0 /* UalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BEE15C12874998100E1A6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BEE159D287479EF00E1A6B0 /* Uallet */;
+			targetProxy = 5BEE15C02874998100E1A6B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BEE15A7287479EF00E1A6B0 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BEE15A8287479EF00E1A6B0 /* Base */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		5BEE15AC287479F000E1A6B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BEE15AD287479F000E1A6B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BEE15B0287479F000E1A6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BEE15B1287479F000E1A6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BEE15B3287479F000E1A6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74113753A90EE9DD8317E59A /* Pods-Uallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2296YLX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Uallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Estefania-Sassone.Uallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BEE15B4287479F000E1A6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90FFB6E1D267AF169F9BFD9 /* Pods-Uallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2296YLX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Uallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Estefania-Sassone.Uallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BEE15C22874998100E1A6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2296YLX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Estefania-Sassone.UalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uallet.app/Uallet";
+			};
+			name = Debug;
+		};
+		5BEE15C32874998100E1A6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PX2296YLX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Estefania-Sassone.UalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uallet.app/Uallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BEE1599287479EF00E1A6B0 /* Build configuration list for PBXProject "Uallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BEE15B0287479F000E1A6B0 /* Debug */,
+				5BEE15B1287479F000E1A6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BEE15B2287479F000E1A6B0 /* Build configuration list for PBXNativeTarget "Uallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BEE15B3287479F000E1A6B0 /* Debug */,
+				5BEE15B4287479F000E1A6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BEE15C42874998100E1A6B0 /* Build configuration list for PBXNativeTarget "UalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BEE15C22874998100E1A6B0 /* Debug */,
+				5BEE15C32874998100E1A6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BEE1596287479EF00E1A6B0 /* Project object */;
+}
